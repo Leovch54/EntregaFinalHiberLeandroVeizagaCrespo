@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Licores - Tienda Online</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/estiloss.css/estilos.css">
+    <!-- Animate.css para animaciones -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css">
+    <!-- AOS - Animations on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="/js,js/ofertas.js"></script> <!-- Aquí se conecta el archivo JS -->
+    
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <header class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">LOGO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="carrito.html">Carrito</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ofertas.html">Ofertas</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección Hero -->
+    <section class="hero bg-dark text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-3 fw-bold mb-4 animate__animated animate__fadeIn">Productos de Licores</h1>
+            <p class="lead mb-4 animate__animated animate__fadeIn animate__delay-1s">Vinos, cervezas y licores premium para disfrutar en cualquier ocasión.</p>
+        </div>
+    </section>
+
+    <!-- Productos de Licores -->
+    <section class="products py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 animate__animated animate__fadeInUp">Explora nuestros licores premium</h2>
+            <div class="row">
+                <!-- Producto 1: Vino -->
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="product-card shadow-sm rounded p-3">
+                        <!-- Imagen del producto -->
+                        <img src="/imagenes/tinto-semidulce.jpg" class="img-fluid mb-3" alt="Vino" style="max-height: 250px; object-fit: cover;">
+                        <div class="product-details text-center">
+                            <h5 class="card-title">Vino Premium 25% Descuento</h5>
+                            <p class="card-text">
+                                $10.00 <span class="text-muted"><s>$12.00</s></span>
+                            </p>
+                            <a href="#" class="btn btn-danger add-to-cart" 
+                               data-name="Vino Premium" 
+                               data-description="Vino tinto de excelente calidad" 
+                               data-price="10.00">Añadir al Carrito</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 2: Cerveza -->
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="product-card shadow-sm rounded p-3">
+                        <!-- Imagen del producto -->
+                        <img src="/imagenes/cervicitachida.avif" class="img-fluid mb-3" alt="Cerveza" style="max-height: 250px; object-fit: cover;">
+                        <div class="product-details text-center">
+                            <h5 class="card-title">Cerveza Artesanal 15% Descuento</h5>
+                            <p class="card-text">
+                                $2.50 <span class="text-muted"><s>$3.00</s></span>
+                            </p>
+                            <a href="#" class="btn btn-danger add-to-cart" 
+                               data-name="Cerveza Artesanal" 
+                               data-description="Cerveza artesanal premium" 
+                               data-price="2.50">Añadir al Carrito</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 3: Licor -->
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="product-card shadow-sm rounded p-3">
+                        <!-- Imagen del producto -->
+                        <img src="/imagenes/png-transparent-liqueur-rum-distilled-beverage-whiskey-wine-wine-distilled-beverage-gold-wine.png" class="img-fluid mb-3" alt="Licor" style="max-height: 250px; object-fit: cover;">
+                        <div class="product-details text-center">
+                            <h5 class="card-title">Licor Premium 30% Descuento</h5>
+                            <p class="card-text">
+                                $14.00 <span class="text-muted"><s>$20.00</s></span>
+                            </p>
+                            <a href="#" class="btn btn-danger add-to-cart" 
+                               data-name="Licor Premium" 
+                               data-description="Licor de alta calidad" 
+                               data-price="14.00">Añadir al Carrito</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Tienda Online de Licores. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS (para los componentes interactivos) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS - Animations on Scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();  // Inicializa las animaciones al hacer scroll
+    </script>
+</body>
+</html>

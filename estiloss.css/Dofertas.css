@@ -1,0 +1,169 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    color: #333;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #FF8C00; /* Color del hover */
+}
+
+.navbar-toggler-icon {
+    background-color: #FF8C00;
+}
+
+/* Hero Section */
+.hero {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #FF8C00;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    background-color: #fff;
+    color: #FF8C00;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.hero .btn:hover {
+    background-color: #FF8C00;
+    color: #fff;
+}
+
+/* Offers Section */
+section.container {
+    margin-top: 70px;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 30px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.card-body {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.card-title {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.card-text {
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+    color: #FF8C00;
+    font-weight: 600;
+}
+
+.card-text s {
+    color: #999;
+    text-decoration: line-through;
+}
+
+.card .btn {
+    background-color: #FF8C00;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.card .btn:hover {
+    background-color: #e77d00;
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+    }
+
+    .card-text {
+        font-size: 1.2rem;
+    }
+}

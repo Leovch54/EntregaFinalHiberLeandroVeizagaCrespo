@@ -1,0 +1,110 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verduras - Tienda Online</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/estiloss.css/estilos.css">
+    <!-- Animate.css para animaciones -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css">
+    <!-- AOS - Animations on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="/js,js/verduras.js"></script> <!-- Aquí se conecta el archivo JS -->
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <header class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">LOGO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="carrito.html">Carrito</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ofertas.html">Ofertas</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección Hero -->
+    <section class="hero bg-dark text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-3 fw-bold mb-4 animate__animated animate__fadeIn">Productos de Verduras</h1>
+            <p class="lead mb-4 animate__animated animate__fadeIn animate__delay-1s">Encuentra las mejores verduras frescas y de temporada para tu hogar.</p>
+        </div>
+    </section>
+
+    <!-- Productos de Verduras -->
+    <section class="products py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 animate__animated animate__fadeInUp">Explora nuestras verduras frescas</h2>
+            <div class="row">
+                <!-- Producto 1 -->
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="product-card shadow-sm rounded p-3">
+                        <img src="/imagenes/lechuga.jpg" class="img-fluid mb-3" alt="Lechuga" style="max-height: 250px; object-fit: cover;">
+                        <h4>Lechuga</h4>
+                        <p>Lechuga fresca y crujiente, perfecta para ensaladas.</p>
+                        <p><strong>$5.00</strong></p>
+                        <!-- Añadí los atributos data-* para pasar la información al JS -->
+                        <button class="btn btn-primary add-to-cart w-100" 
+                                data-name="Lechuga" 
+                                data-description="Lechuga fresca y crujiente, perfecta para ensaladas." 
+                                data-price="5.00">Agregar al carrito</button>
+                    </div>
+                </div>
+                <!-- Producto 2 -->
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="product-card shadow-sm rounded p-3">
+                        <img src="/imagenes/tomato.avif" class="img-fluid mb-3" alt="Tomate" style="max-height: 250px; object-fit: cover;">
+                        <h4>Tomate</h4>
+                        <p>Tomates frescos, jugosos y perfectos para tus recetas.</p>
+                        <p><strong>$7.00</strong></p>
+                        <!-- Añadí los atributos data-* para pasar la información al JS -->
+                        <button class="btn btn-primary add-to-cart w-100" 
+                                data-name="Tomate" 
+                                data-description="Tomates frescos, jugosos y perfectos para tus recetas." 
+                                data-price="7.00">Agregar al carrito</button>
+                    </div>
+                </div>
+                <!-- Producto 3 -->
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="product-card shadow-sm rounded p-3">
+                        <img src="/imagenes/zanah.png" class="img-fluid mb-3" alt="Zanahorias" style="max-height: 250px; object-fit: cover;">
+                        <h4>Zanahorias</h4>
+                        <p>Zanahorias frescas y llenas de sabor para tus platos.</p>
+                        <p><strong>$4.00</strong></p>
+                        <!-- Añadí los atributos data-* para pasar la información al JS -->
+                        <button class="btn btn-primary add-to-cart w-100" 
+                                data-name="Zanahorias" 
+                                data-description="Zanahorias frescas y llenas de sabor para tus platos." 
+                                data-price="4.00">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Tu Tienda Online. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="verduras.js"></script> <!-- Aquí se conecta el archivo JS -->
+    <script>
+        AOS.init(); // Activar las animaciones de AOS
+    </script>
+</body>
+</html>

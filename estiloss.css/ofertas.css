@@ -1,0 +1,50 @@
+/* Custom Styles for Offers Page */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('img/hero-bg.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-body {
+    background-color: white;
+    padding: 20px;
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.btn-warning, .btn-danger, .btn-success, .btn-info {
+    padding: 10px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+footer .social-icons a {
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+
+footer .social-icons a:hover {
+    color: #f8a800;
+}

@@ -1,0 +1,33 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.cart-section {
+    margin-top: 100px;
+}
+
+.table img {
+    max-width: 100%;
+    height: auto;
+}
+
+table th, table td {
+    text-align: center;
+}
+
+.card-body p {
+    font-size: 18px;
+}
+
+.card-title {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #333;
+}
+
+footer p {
+    margin: 0;
+}

@@ -1,0 +1,73 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 100px; /* Space for fixed navbar */
+}
+
+.navbar {
+    background-color: #fff;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #333;
+}
+
+.navbar-nav .nav-link {
+    color: #555;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f39c12;
+}
+
+/* Hero Section */
+.hero {
+    background: url('../img/hero.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 80px 0;
+    color: #fff;
+}
+
+/* Category Box */
+.category-box {
+    background: #f7f7f7;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+
+.category-box:hover {
+    background-color: #f39c12;
+    color: #fff;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    border-bottom: 1px solid #ddd;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+}

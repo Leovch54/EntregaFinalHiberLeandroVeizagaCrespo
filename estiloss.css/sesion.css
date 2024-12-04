@@ -1,0 +1,149 @@
+/* --- GLOBAL STYLES --- */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    margin-top: 80px;
+}
+
+/* --- HEADER STYLES --- */
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav .nav-link {
+    color: #555;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ff6f00;
+}
+
+/* --- FORM PAGE STYLES --- */
+form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: auto;
+}
+
+h2 {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.form-control {
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #ff6f00;
+    box-shadow: 0 0 5px rgba(255, 111, 0, 0.5);
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #ff6f00;
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s ease-out;
+}
+
+button:hover {
+    background-color: #e65c00;
+    transform: translateY(-3px);
+}
+
+/* --- LINK STYLES --- */
+a {
+    color: #ff6f00;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* --- FOOTER STYLES --- */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* --- ANIMATIONS --- */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section {
+    animation: fadeInUp 1s ease-out;
+}
+
+/* --- BUTTON ANIMATION --- */
+button {
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.4s, transform 0.3s ease-out;
+}
+
+button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+    transition: all 0.4s ease-out;
+}
+
+button:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+button:hover {
+    transform: translateY(-3px);
+}
+
+/* --- MEDIA QUERIES --- */
+@media (max-width: 768px) {
+    .container {
+        margin-top: 60px;
+    }
+
+    form {
+        padding: 20px;
+    }
+}

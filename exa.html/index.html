@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Tienda Online</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/estiloss.css/INDEX.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="navbar navbar-expand-lg navbar-light bg-dark fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand text-white font-weight-bold" href="#">LOGO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="carrito.html">Carrito</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ofertas.html">Ofertas</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero bg-gradient text-white text-center py-5" style="background-image: url('img/hero-bg.jpg'); background-size: cover; background-position: center;">
+            <div class="container">
+                <h1 class="display-3 fw-bold mb-4 animated fadeIn">Bienvenido a Leandro Supermarket</h1>
+                <p class="lead mb-4 animated fadeIn">Encuentra lo mejor en productos de calidad. ¡Compra ahora y recibe en tu puerta!</p>
+                <a href="productos.html" class="btn btn-warning btn-lg rounded-pill shadow-lg animated fadeIn">Ver Productos</a>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section class="bg-light py-5">
+            <div class="container text-center">
+                <h2 class="fw-bold mb-4">¿Quiénes Somos?</h2>
+                <p class="lead mb-4">En Tu Tienda Online ofrecemos productos de calidad para hacer tu vida más fácil y conveniente. ¡Compra de manera segura y recibe en la comodidad de tu hogar!</p>
+                <a href="about.html" class="btn btn-outline-dark btn-lg rounded-pill px-4 py-2 shadow-lg">Saber Más</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">&copy; 2024 Tu Tienda Online. Todos los derechos reservados.</p>
+        <div class="social-icons mt-3">
+            <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!-- Animations -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const elements = document.querySelectorAll('.animated');
+            elements.forEach(element => {
+                setTimeout(() => {
+                    element.classList.add('fadeIn');
+                }, 200);
+            });
+        });
+    </script>
+</body>
+</html>
